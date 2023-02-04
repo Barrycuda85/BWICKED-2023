@@ -13,20 +13,36 @@
   <h1>B.WICKed</h1>
   <p>Barry Wickham Editing & Design</p> 
 </div>
-  
+<div class= "d-grid">
+
+  <button type="button" class="btn btn-primary btn-block" class="center" onclick="this.innerHTML=myTime()"> 
+    What Is The Date? </button>
+
+<button  type="button"  class="btn btn-primary btn-block" class="center" onclick="this.innerHTML=mathFun(8,3)" > 
+If I had 3 pizzas, and I cut them into 8 slices a piece, how many slices would I have total? </button>
+
+
+
+</div>
+
+
 <div class="container mt-5">
   <div class="row">
     <div class="col-sm-4">
+      
       <h3>Column 1</h3>
       <p>Welcome to my test page!</p>
       <p>Press F12 to read the console!</p>
+
+
     </div>
     <div class="col-sm-4">
       <h3>Column 2</h3>
-      <p>Messing around with a Bootstrap example.</p>
-      <p>Wanted something on the page besides just a white background</p>
-    </div>
-    <div class="col-sm-4">
+      <p>I own a 5-string bass guitar!</p>
+      <button type="button"  class="btn btn-primary btn-block" class="center"  
+      onclick="this.innerHTML= bassGuitar.fullDesc()"> What kind of bass guitar is it? </button>   
+    </div> 
+    <div class="col-sm-4"> 
       <h3>Column 3</h3>        
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
@@ -35,6 +51,9 @@
 </div>
     <div class="d-grid"><button type="button" class="btn btn-primary btn-block" class="center" 
         onclick="document.write (5 + 8)">What is 5 + 8? </button></div>
-    <script src="/app.js"></script>
+    <script src="/app.js">
+
+
+    </script>
 </body>
 </html>
