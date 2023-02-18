@@ -14,10 +14,11 @@
   <p>Barry Wickham Editing & Design</p> 
 </div>
 <div class= "d-grid">
+  
 
   <button type="button" class="btn btn-primary btn-block" class="center" onclick="this.innerHTML=myTime()"> 
     What Is The Date? </button>
-
+   
 <button  type="button"  class="btn btn-primary btn-block" class="center" onclick="this.innerHTML=mathFun(8,3)" > 
 If I had 3 pizzas, and I cut them into 8 slices a piece, how many slices would I have total? </button>
 
@@ -32,28 +33,43 @@ If I had 3 pizzas, and I cut them into 8 slices a piece, how many slices would I
       
       <h3>Introduction</h3>
       <p id="intro">Welcome to my test page!</p>
-      <p>Press F12 to read the console!</p>
+      <p id="change">Press F12 to read the console!</p>
+      <p> <h2>The top bass guitar brands are:</h2> <h3 id="model">
+
+      </h3></p>
 
 
     </div>
     <div class="col-sm-4">
       <h3>Column 2</h3>
       <p>I own a 5-string bass guitar!</p>
-      <button type="button"  class="btn btn-primary btn-block" class="center"  
-      onclick="this.innerHTML= bassGuitar.fullDesc()"> What kind of bass guitar is it? </button>   
-    </div> 
-    <div class="col-sm-4"> 
+      <p><button type="button"  class="btn btn-primary btn-block" class="center"  
+        onclick="this.innerHTML= bassGuitar.fullDesc()"> What kind of bass guitar is it? </button> </p>  
+     
+        <p>If I could have any one of those brands of bass I would choose : 
+       <p>
+        <button id="alert" type="button"  class="btn btn-primary btn-block" class="center" onclick="this.innerHTML=bassBrands"> CLICK </button></p> 
+      
+      </p>
+    
+      </div> 
+    
+    
+    
+    <div class="col-sm-4" > 
       <h3 id="southern">Column 3</h3>        
       <p>Depening on what time it is, the heading above will give you a southern greeting! </p>
+
       <p id="today" class="display-5"></p>
+    
+      
     </div>
   </div>
 </div>
     <div class="d-grid"><button type="button" class="btn btn-primary btn-block" class="center" 
         onclick="document.write (5 + 8)">What is 5 + 8? </button></div>
+    
     <script src="/app.js">
-
-
     </script>
 </body>
 </html>
