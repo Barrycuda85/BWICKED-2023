@@ -50,37 +50,6 @@ const bassGuitar = {
       return  this.type + "  " + this.model + " a " + this.style + " " + this.color + " color" + " bass guitar";}
 };// OBJECT with METHOD TRIGGERED BY EVENT
 
-document.getElementById("change").style.color = "blue";
-document.getElementById("change").style.fontFamily = "Arial";
-document.getElementById("change").style.fontSize = "larger";
-
-
-
-const bassBrands = ["Fender", "Rickenbacker", "Warwick","Washburn","Hofner","Gibson","Schecter"];
-
-document.getElementById("alert").addEventListener(
-  
-  "click", function()
-{alert("ALL OF THEM! I WOULD GET ALL OF THEM!!!")
-})
-
-let type = "";
-for (let x in bassBrands) {
- type += bassBrands[x] + "<br>"; 
-}
-document.getElementById("model").innerHTML= type;
-
-let i = 0;
-let brands = "";
-while (bassBrands[i]) {
-  brands += bassBrands[i] + "<br>";
-  i++;
-}
-document.getElementById("brand").innerHTML = brands;
-
-document.getElementById("brand").addEventListener("click", function(){
-  alert("ALL OF THEM!")
-} )
 
 
 let inside = `My name is ${name}, and I am ${age} years old. I will get my ${degree} by the end of this year!`
@@ -116,4 +85,32 @@ console.log (t.valueOf(), g.valueOf(), h.valueOf(), name.toUpperCase(), guitar.t
 console.log (b, x, y, z, life, name, bassGuitar, myTime, mathFun,bassGuitar)
 
 
+const bassBrands = ["Fender", "Rickenbacker", "Warwick","Washburn","Hofner","Gibson","Schecter"];
 
+document.getElementById("alert").addEventListener(
+  
+  "click", function()
+{alert("ALL OF THEM! I WOULD GET ALL OF THEM!!!")
+})
+
+let type = "";
+for (let x in bassBrands) {
+ type += bassBrands[x] + "<br>"; 
+}
+document.getElementById("model").innerHTML= type;
+
+
+document.getElementById("brand").innerHTML =brands;
+
+document.getElementById("brand").addEventListener("click", function(){
+  let i = 0;
+let brands = "";
+while (bassBrands[i]) {
+  brands += bassBrands[i] + "<br>";
+  i++;
+}
+} )
+
+document.getElementById("change").style.color = "blue";
+document.getElementById("change").style.fontFamily = "Arial";
+document.getElementById("change").style.fontSize = "larger";
