@@ -87,11 +87,6 @@ console.log (b, x, y, z, life, name, bassGuitar, myTime, mathFun,bassGuitar)
 
 const bassBrands = ["Fender", "Rickenbacker", "Warwick","Washburn","Hofner","Gibson","Schecter"];
 
-document.getElementById("alert").addEventListener(
-  
-  "click", function()
-{alert("ALL OF THEM! I WOULD GET ALL OF THEM!!!")
-})
 
 let type = "";
 for (let x in bassBrands) {
@@ -99,18 +94,19 @@ for (let x in bassBrands) {
 }
 document.getElementById("model").innerHTML= type;
 
-
-document.getElementById("brand").innerHTML =brands;
-
-document.getElementById("brand").addEventListener("click", function(){
-  let i = 0;
+let i = 0;
 let brands = "";
 while (bassBrands[i]) {
   brands += bassBrands[i] + "<br>";
   i++;
 }
-} )
+document.getElementById("brand").innerHTML =brands;
+
 
 document.getElementById("change").style.color = "blue";
 document.getElementById("change").style.fontFamily = "Arial";
 document.getElementById("change").style.fontSize = "larger";
+
+document.getElementById("alert").addEventListener("click", function()
+{alert("ALL OF THEM! I WOULD GET ALL OF THEM!!!")
+})
