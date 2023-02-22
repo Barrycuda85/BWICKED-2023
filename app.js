@@ -2,25 +2,39 @@
 document.getElementById("change").style.color = "blue";
 document.getElementById("change").style.fontFamily = "Arial";
 document.getElementById("change").style.fontSize = "xx-large";
+document.getElementById("change").style.fontWeight = "900";
 
 
 document.getElementById("new").style.color = "SteelBlue";
 document.getElementById("new").style.fontFamily = "Arial";
 document.getElementById("new").style.fontSize = "xx-large";
+document.getElementById("new").style.fontWeight = "900";
 
 document.getElementById("model").style.color = "SteelBlue";
+document.getElementById("model").style.fontWeight = "900";
 
 
 document.getElementById("today").style.color = "SteelBlue";
+document.getElementById("today").style.fontStyle = "oblique";
+document.getElementById("today").style.fontWeight = "900";
 
 document.getElementById("back").style.backgroundColor = "SandyBrown";
 document.getElementById("back").style.color = "WhiteSmoke";
 document.getElementById("back").style.textShadow = " 2px 2px 2px black" ;
 
+
 document.getElementById("alert").addEventListener("click", function()
 {alert("ALL OF THEM! I WOULD GET ALL OF THEM!!!")
 })
 
+const d = new Date();
+let time = d.toTimeString();
+document.getElementById("current").innerHTML =`The time is currently ${time}`;
+
+document.getElementById("current").style.color = "SteelBlue";
+document.getElementById("current").style.fontFamily = "Arial";
+document.getElementById("current").style.fontSize = "xx-large";
+document.getElementById("current").style.fontWeight = "900";
 
 
 function mathFun(t1, t2) { 
@@ -61,6 +75,7 @@ else {
     saying= `Good Evening, ya'll!`;
 }
 document.getElementById("southern").innerHTML = saying;
+document.getElementById("southern").style.fontWeight = "900";
 
 let z = x + y // this is an EQUATION
 {let x=678;} // this is BLOCK SCOPE
@@ -79,6 +94,7 @@ const bassGuitar = {
 let inside = `My name is ${name}, and I am ${age} years old. I will get my ${degree} by the end of this year!`
 
 document.getElementById("intro").innerHTML = inside; 
+document.getElementById("intro").style.fontWeight = "900";
 
 let day;
 switch (new Date().getDay()) {
