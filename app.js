@@ -1,4 +1,28 @@
 
+document.getElementById("change").style.color = "blue";
+document.getElementById("change").style.fontFamily = "Arial";
+document.getElementById("change").style.fontSize = "xx-large";
+
+
+document.getElementById("new").style.color = "SteelBlue";
+document.getElementById("new").style.fontFamily = "Arial";
+document.getElementById("new").style.fontSize = "xx-large";
+
+document.getElementById("model").style.color = "SteelBlue";
+
+
+document.getElementById("today").style.color = "SteelBlue";
+
+document.getElementById("back").style.backgroundColor = "SandyBrown";
+document.getElementById("back").style.color = "WhiteSmoke";
+document.getElementById("back").style.textShadow = " 2px 2px 2px black" ;
+
+document.getElementById("alert").addEventListener("click", function()
+{alert("ALL OF THEM! I WOULD GET ALL OF THEM!!!")
+})
+
+
+
 function mathFun(t1, t2) { 
     return t1 * t2;
 }   // FUNCTION 1 TRIGGERED BY EVENT
@@ -86,6 +110,7 @@ console.log (b, x, y, z, life, name, bassGuitar, myTime, mathFun,bassGuitar)
 
 
 const bassBrands = ["Fender", "Rickenbacker", "Warwick","Washburn","Hofner","Gibson","Schecter"];
+document.getElementById("guitar").innerHTML = bassBrands; 
 
 
 let type = "";
@@ -102,11 +127,24 @@ while (bassBrands[i]) {
 }
 document.getElementById("brand").innerHTML =brands;
 
+let txt = "";
+bassBrands.forEach(bassFunction);
+document.getElementById("guitar").innerHTML = txt;
 
-document.getElementById("change").style.color = "blue";
-document.getElementById("change").style.fontFamily = "Arial";
-document.getElementById("change").style.fontSize = "larger";
+function bassFunction() {
+  for (let i = bassBrands.length -1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i+1));
+    let k =bassBrands[i];
+    bassBrands[i] =bassBrands[j];
+    bassBrands[j] = k;
+  }
+  document.getElementById("guitar").innerHTML = bassBrands;
+}
 
-document.getElementById("alert").addEventListener("click", function()
-{alert("ALL OF THEM! I WOULD GET ALL OF THEM!!!")
-})
+
+
+
+
+
+
+
