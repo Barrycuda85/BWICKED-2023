@@ -110,7 +110,7 @@ console.log (b, x, y, z, life, name, bassGuitar, myTime, mathFun,bassGuitar)
 
 
 const bassBrands = ["Fender", "Rickenbacker", "Warwick","Washburn","Hofner","Gibson","Schecter"];
-document.getElementById("guitar").innerHTML = bassBrands; 
+document.getElementById("guitar").innerHTML = bassBrands;  // ARRAY
 
 
 let type = "";
@@ -125,7 +125,9 @@ while (bassBrands[i]) {
   brands += bassBrands[i] + "<br>";
   i++;
 }
-document.getElementById("brand").innerHTML =brands;
+document.getElementById("brand").innerHTML =brands;     // ARRAY METHODS
+
+
 
 let txt = "";
 bassBrands.forEach(bassFunction);
@@ -140,7 +142,7 @@ function bassFunction() {
   }
   document.getElementById("guitar").innerHTML = bassBrands;
 }
-
+                                                      // ARRAY METHODS
 
 
 
