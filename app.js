@@ -135,14 +135,33 @@ for (let x in bassBrands) {
 }
 document.getElementById("model").innerHTML= type;
 
+const dreamCar = {
+  make: "Ford",
+  model: "Mustang",
+  year: "1967",
+  style: "Fastback" ,
+  wholeName: function () {
+    return "a" + " " + this.year + " " + this.make +
+    " " + this.model + " " + this.style;   }
+}; // OBJECT with OBJECT method attached
+
+document.getElementById("car").innerHTML = 
+`If I could choose any car in the whole world, I would drive ${dreamCar.wholeName()}` // Calling Object Method
+
+
+document.getElementById("car").style.color = "SteelBlue";
+document.getElementById("car").style.fontFamily = "Arial";
+document.getElementById("car").style.fontSize = "x-large";
+document.getElementById("car").style.fontWeight = "600";
+
+
 let i = 0;
 let brands = "";
 while (bassBrands[i]) {
   brands += bassBrands[i] + "<br>";
   i++;
-}
-document.getElementById("brand").innerHTML =brands;     // ARRAY METHODS
-
+};
+document.getElementById("brand").innerHTML = brands;
 
 
 let txt = "";
@@ -156,10 +175,8 @@ function bassFunction() {
     bassBrands[i] =bassBrands[j];
     bassBrands[j] = k;
   }
-  document.getElementById("guitar").innerHTML = bassBrands;
-}
-                                                      // ARRAY METHODS
-
+  document.getElementById("guitar").innerHTML = bassBrands; 
+} // ARRAY METHODS
 
 
 
